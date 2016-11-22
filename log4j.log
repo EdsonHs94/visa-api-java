@@ -1,0 +1,570 @@
+2016-11-19 17:56:38 INFO  VisaAPIClient:198 - URI: https://sandbox.api.visa.com/cybersource/payments/v1/authorizations?apikey=X47Z5FC4UUIDVGLV0UNB21-tBiy8AHWBZUYpk4H0W0xD2APi0
+2016-11-19 17:56:38 INFO  VisaAPIClient:199 - Payment Authorization Test
+2016-11-19 17:56:38 INFO  VisaAPIClient:203 - RequestBody: {
+  "amount" : "0",
+  "currency" : "USD",
+  "payment" : {
+    "cardNumber" : "4111111111111111",
+    "cardExpirationMonth" : "10",
+    "cardExpirationYear" : "2016"
+  }
+}
+2016-11-19 17:56:41 INFO  VisaAPIClient:171 - Response status : HTTP/1.1 400 Bad Request
+
+2016-11-19 17:56:41 INFO  VisaAPIClient:173 - Response Headers: 
+
+2016-11-19 17:56:41 INFO  VisaAPIClient:176 - X-SERVED-BY:l73c035m
+2016-11-19 17:56:41 INFO  VisaAPIClient:176 - X-Backside-Transport:FAIL FAIL,FAIL FAIL
+2016-11-19 17:56:41 INFO  VisaAPIClient:176 - X-Client-IP:127.0.0.1,10.121.113.121
+2016-11-19 17:56:41 INFO  VisaAPIClient:176 - X-Global-Transaction-ID:123890593
+2016-11-19 17:56:41 INFO  VisaAPIClient:176 - X-Archived-Client-IP:127.0.0.1
+2016-11-19 17:56:41 INFO  VisaAPIClient:176 - X-APP-STATUS:400
+2016-11-19 17:56:41 INFO  VisaAPIClient:176 - X-CORRELATION-ID:e29MWqBR42_SC
+2016-11-19 17:56:41 INFO  VisaAPIClient:176 - X-Frame-Options:SAMEORIGIN
+2016-11-19 17:56:41 INFO  VisaAPIClient:176 - X-XSS-Protection:1; mode=block
+2016-11-19 17:56:41 INFO  VisaAPIClient:176 - X-Content-Type-Options:nosniff
+2016-11-19 17:56:41 INFO  VisaAPIClient:176 - Strict-Transport-Security:max-age=2592000;includeSubdomains
+2016-11-19 17:56:41 INFO  VisaAPIClient:176 - Cache-Control:no-cache, no-store, must-revalidate
+2016-11-19 17:56:41 INFO  VisaAPIClient:176 - Pragma:no-cache
+2016-11-19 17:56:41 INFO  VisaAPIClient:176 - Expires:Thu, 01 Jan 1970 00:00:00 GMT
+2016-11-19 17:56:41 INFO  VisaAPIClient:176 - Content-Security-Policy-Report-Only:default-src 'self' https://*.v.me https://*.visa.com;script-src 'self' 'unsafe-inline' 'unsafe-eval'  https://*.visa.com https://*.v.me;img-src 'self' https://*.v.me https://*.visa.com https://*.unica.com https://ad.doubleclick.net;style-src 'self' 'unsafe-inline' https://*.visa.com;object-src  https://*.v.me https://*.visa.com data:;report-uri /logging/logCSPReport;
+2016-11-19 17:56:41 INFO  VisaAPIClient:176 - X-Content-Security-Policy-Report-Only:default-src 'self' https://*.v.me https://*.visa.com;script-src 'self' 'unsafe-inline' 'unsafe-eval'  https://*.visa.com https://*.v.me;img-src 'self' https://*.v.me https://*.visa.com https://*.unica.com https://ad.doubleclick.net;style-src 'self' 'unsafe-inline' https://*.visa.com;object-src  https://*.v.me https://*.visa.com data:;report-uri /logging/logCSPReport;
+2016-11-19 17:56:41 INFO  VisaAPIClient:176 - X-WebKit-CSP-Report-Only:default-src 'self' https://*.v.me https://*.visa.com;script-src 'self' 'unsafe-inline' 'unsafe-eval'  https://*.visa.com https://*.v.me;img-src 'self' https://*.v.me https://*.visa.com https://*.unica.com https://ad.doubleclick.net;style-src 'self' 'unsafe-inline' https://*.visa.com;object-src  https://*.v.me https://*.visa.com data:;report-uri /logging/logCSPReport;
+2016-11-19 17:56:41 INFO  VisaAPIClient:176 - Content-Type:application/hal+json;charset=UTF-8
+2016-11-19 17:56:41 INFO  VisaAPIClient:176 - Content-Language:en-US
+2016-11-19 17:56:41 INFO  VisaAPIClient:176 - Content-Length:582
+2016-11-19 17:56:41 INFO  VisaAPIClient:176 - X-Cnection:close
+2016-11-19 17:56:41 INFO  VisaAPIClient:176 - Date:Sat, 19 Nov 2016 22:56:41 GMT
+2016-11-19 17:56:41 INFO  VisaAPIClient:176 - Connection:close
+2016-11-19 17:56:41 INFO  VisaAPIClient:177 - 
+ Response Body:
+2016-11-19 17:56:41 INFO  VisaAPIClient:184 - ResponseBody: {
+  "responseStatus" : {
+    "status" : 400,
+    "reason" : "card_expired",
+    "message" : "The card has expired.",
+    "correlationId" : "2bfcd54d-34f1-4f3f-9993-8ada25fdd57d",
+    "details" : [ {
+      "location" : "reasonCode",
+      "message" : "202"
+    } ]
+  },
+  "_links" : {
+    "self" : {
+      "href" : "https://sandbox.api.visa.com/cybersource/payments/v1/errors/2bfcd54d-34f1-4f3f-9993-8ada25fdd57d",
+      "method" : "GET"
+    },
+    "documentation" : [ {
+      "href" : "https://vdp.visa.com/cybersource_error_codes#card_expired",
+      "method" : "GET"
+    } ]
+  }
+}
+2016-11-19 18:20:08 INFO  VisaAPIClient:198 - URI: https://sandbox.api.visa.com/cybersource/payments/v1/authorizations?apikey=X47Z5FC4UUIDVGLV0UNB21-tBiy8AHWBZUYpk4H0W0xD2APi0
+2016-11-19 18:20:08 INFO  VisaAPIClient:199 - Payment Authorization Test
+2016-11-19 18:20:08 INFO  VisaAPIClient:203 - RequestBody: {
+  "amount" : "0",
+  "currency" : "USD",
+  "payment" : {
+    "cardNumber" : "4111111111111111",
+    "cardExpirationMonth" : "10",
+    "cardExpirationYear" : "2016"
+  }
+}
+2016-11-19 18:20:15 INFO  VisaAPIClient:171 - Response status : HTTP/1.1 400 Bad Request
+
+2016-11-19 18:20:15 INFO  VisaAPIClient:173 - Response Headers: 
+
+2016-11-19 18:20:15 INFO  VisaAPIClient:176 - X-SERVED-BY:l73c003m
+2016-11-19 18:20:15 INFO  VisaAPIClient:176 - X-Backside-Transport:FAIL FAIL,FAIL FAIL
+2016-11-19 18:20:15 INFO  VisaAPIClient:176 - X-Client-IP:127.0.0.1,10.121.112.186
+2016-11-19 18:20:15 INFO  VisaAPIClient:176 - X-Global-Transaction-ID:123945569
+2016-11-19 18:20:15 INFO  VisaAPIClient:176 - X-Archived-Client-IP:127.0.0.1
+2016-11-19 18:20:15 INFO  VisaAPIClient:176 - X-APP-STATUS:400
+2016-11-19 18:20:15 INFO  VisaAPIClient:176 - X-CORRELATION-ID:Qr1H1LsSJB_SC
+2016-11-19 18:20:15 INFO  VisaAPIClient:176 - X-Frame-Options:SAMEORIGIN
+2016-11-19 18:20:15 INFO  VisaAPIClient:176 - X-XSS-Protection:1; mode=block
+2016-11-19 18:20:15 INFO  VisaAPIClient:176 - X-Content-Type-Options:nosniff
+2016-11-19 18:20:15 INFO  VisaAPIClient:176 - Strict-Transport-Security:max-age=2592000;includeSubdomains
+2016-11-19 18:20:15 INFO  VisaAPIClient:176 - Cache-Control:no-cache, no-store, must-revalidate
+2016-11-19 18:20:15 INFO  VisaAPIClient:176 - Pragma:no-cache
+2016-11-19 18:20:15 INFO  VisaAPIClient:176 - Expires:Thu, 01 Jan 1970 00:00:00 GMT
+2016-11-19 18:20:15 INFO  VisaAPIClient:176 - Content-Security-Policy-Report-Only:default-src 'self' https://*.v.me https://*.visa.com;script-src 'self' 'unsafe-inline' 'unsafe-eval'  https://*.visa.com https://*.v.me;img-src 'self' https://*.v.me https://*.visa.com https://*.unica.com https://ad.doubleclick.net;style-src 'self' 'unsafe-inline' https://*.visa.com;object-src  https://*.v.me https://*.visa.com data:;report-uri /logging/logCSPReport;
+2016-11-19 18:20:15 INFO  VisaAPIClient:176 - X-Content-Security-Policy-Report-Only:default-src 'self' https://*.v.me https://*.visa.com;script-src 'self' 'unsafe-inline' 'unsafe-eval'  https://*.visa.com https://*.v.me;img-src 'self' https://*.v.me https://*.visa.com https://*.unica.com https://ad.doubleclick.net;style-src 'self' 'unsafe-inline' https://*.visa.com;object-src  https://*.v.me https://*.visa.com data:;report-uri /logging/logCSPReport;
+2016-11-19 18:20:15 INFO  VisaAPIClient:176 - X-WebKit-CSP-Report-Only:default-src 'self' https://*.v.me https://*.visa.com;script-src 'self' 'unsafe-inline' 'unsafe-eval'  https://*.visa.com https://*.v.me;img-src 'self' https://*.v.me https://*.visa.com https://*.unica.com https://ad.doubleclick.net;style-src 'self' 'unsafe-inline' https://*.visa.com;object-src  https://*.v.me https://*.visa.com data:;report-uri /logging/logCSPReport;
+2016-11-19 18:20:15 INFO  VisaAPIClient:176 - Content-Type:application/hal+json;charset=UTF-8
+2016-11-19 18:20:15 INFO  VisaAPIClient:176 - Content-Language:en-US
+2016-11-19 18:20:15 INFO  VisaAPIClient:176 - Content-Length:582
+2016-11-19 18:20:15 INFO  VisaAPIClient:176 - X-Cnection:close
+2016-11-19 18:20:15 INFO  VisaAPIClient:176 - Date:Sat, 19 Nov 2016 23:20:15 GMT
+2016-11-19 18:20:15 INFO  VisaAPIClient:176 - Connection:close
+2016-11-19 18:20:15 INFO  VisaAPIClient:177 - 
+ Response Body:
+2016-11-19 18:20:15 INFO  VisaAPIClient:184 - ResponseBody: {
+  "responseStatus" : {
+    "status" : 400,
+    "reason" : "card_expired",
+    "message" : "The card has expired.",
+    "correlationId" : "db4753e1-206b-499d-a4c7-be38d497bdb6",
+    "details" : [ {
+      "location" : "reasonCode",
+      "message" : "202"
+    } ]
+  },
+  "_links" : {
+    "self" : {
+      "href" : "https://sandbox.api.visa.com/cybersource/payments/v1/errors/db4753e1-206b-499d-a4c7-be38d497bdb6",
+      "method" : "GET"
+    },
+    "documentation" : [ {
+      "href" : "https://vdp.visa.com/cybersource_error_codes#card_expired",
+      "method" : "GET"
+    } ]
+  }
+}
+2016-11-19 18:21:05 INFO  VisaAPIClient:198 - URI: https://sandbox.api.visa.com/cybersource/payments/v1/authorizations?apikey=X47Z5FC4UUIDVGLV0UNB21-tBiy8AHWBZUYpk4H0W0xD2APi0
+2016-11-19 18:21:05 INFO  VisaAPIClient:199 - Payment Authorization Test
+2016-11-19 18:21:05 INFO  VisaAPIClient:203 - RequestBody: {
+  "amount" : "0",
+  "currency" : "USD",
+  "payment" : {
+    "cardNumber" : "4111111111111111",
+    "cardExpirationMonth" : "10",
+    "cardExpirationYear" : "2016"
+  }
+}
+2016-11-19 18:21:06 INFO  VisaAPIClient:171 - Response status : HTTP/1.1 400 Bad Request
+
+2016-11-19 18:21:06 INFO  VisaAPIClient:173 - Response Headers: 
+
+2016-11-19 18:21:06 INFO  VisaAPIClient:176 - X-SERVED-BY:l73c037m
+2016-11-19 18:21:06 INFO  VisaAPIClient:176 - X-Backside-Transport:FAIL FAIL,FAIL FAIL
+2016-11-19 18:21:06 INFO  VisaAPIClient:176 - X-Client-IP:127.0.0.1,10.121.113.125
+2016-11-19 18:21:06 INFO  VisaAPIClient:176 - X-Global-Transaction-ID:123956033
+2016-11-19 18:21:06 INFO  VisaAPIClient:176 - X-Archived-Client-IP:127.0.0.1
+2016-11-19 18:21:06 INFO  VisaAPIClient:176 - X-APP-STATUS:400
+2016-11-19 18:21:06 INFO  VisaAPIClient:176 - X-CORRELATION-ID:AziXXqjckl_SC
+2016-11-19 18:21:06 INFO  VisaAPIClient:176 - X-Frame-Options:SAMEORIGIN
+2016-11-19 18:21:06 INFO  VisaAPIClient:176 - X-XSS-Protection:1; mode=block
+2016-11-19 18:21:06 INFO  VisaAPIClient:176 - X-Content-Type-Options:nosniff
+2016-11-19 18:21:06 INFO  VisaAPIClient:176 - Strict-Transport-Security:max-age=2592000;includeSubdomains
+2016-11-19 18:21:06 INFO  VisaAPIClient:176 - Cache-Control:no-cache, no-store, must-revalidate
+2016-11-19 18:21:06 INFO  VisaAPIClient:176 - Pragma:no-cache
+2016-11-19 18:21:06 INFO  VisaAPIClient:176 - Expires:Thu, 01 Jan 1970 00:00:00 GMT
+2016-11-19 18:21:06 INFO  VisaAPIClient:176 - Content-Security-Policy-Report-Only:default-src 'self' https://*.v.me https://*.visa.com;script-src 'self' 'unsafe-inline' 'unsafe-eval'  https://*.visa.com https://*.v.me;img-src 'self' https://*.v.me https://*.visa.com https://*.unica.com https://ad.doubleclick.net;style-src 'self' 'unsafe-inline' https://*.visa.com;object-src  https://*.v.me https://*.visa.com data:;report-uri /logging/logCSPReport;
+2016-11-19 18:21:06 INFO  VisaAPIClient:176 - X-Content-Security-Policy-Report-Only:default-src 'self' https://*.v.me https://*.visa.com;script-src 'self' 'unsafe-inline' 'unsafe-eval'  https://*.visa.com https://*.v.me;img-src 'self' https://*.v.me https://*.visa.com https://*.unica.com https://ad.doubleclick.net;style-src 'self' 'unsafe-inline' https://*.visa.com;object-src  https://*.v.me https://*.visa.com data:;report-uri /logging/logCSPReport;
+2016-11-19 18:21:06 INFO  VisaAPIClient:176 - X-WebKit-CSP-Report-Only:default-src 'self' https://*.v.me https://*.visa.com;script-src 'self' 'unsafe-inline' 'unsafe-eval'  https://*.visa.com https://*.v.me;img-src 'self' https://*.v.me https://*.visa.com https://*.unica.com https://ad.doubleclick.net;style-src 'self' 'unsafe-inline' https://*.visa.com;object-src  https://*.v.me https://*.visa.com data:;report-uri /logging/logCSPReport;
+2016-11-19 18:21:06 INFO  VisaAPIClient:176 - Content-Type:application/hal+json;charset=UTF-8
+2016-11-19 18:21:06 INFO  VisaAPIClient:176 - Content-Language:en-US
+2016-11-19 18:21:06 INFO  VisaAPIClient:176 - Content-Length:582
+2016-11-19 18:21:06 INFO  VisaAPIClient:176 - X-Cnection:close
+2016-11-19 18:21:06 INFO  VisaAPIClient:176 - Date:Sat, 19 Nov 2016 23:21:06 GMT
+2016-11-19 18:21:06 INFO  VisaAPIClient:176 - Connection:close
+2016-11-19 18:21:06 INFO  VisaAPIClient:177 - 
+ Response Body:
+2016-11-19 18:21:06 INFO  VisaAPIClient:184 - ResponseBody: {
+  "responseStatus" : {
+    "status" : 400,
+    "reason" : "card_expired",
+    "message" : "The card has expired.",
+    "correlationId" : "6a5f15a4-f1f6-42e1-9c58-7b07a062bacb",
+    "details" : [ {
+      "location" : "reasonCode",
+      "message" : "202"
+    } ]
+  },
+  "_links" : {
+    "self" : {
+      "href" : "https://sandbox.api.visa.com/cybersource/payments/v1/errors/6a5f15a4-f1f6-42e1-9c58-7b07a062bacb",
+      "method" : "GET"
+    },
+    "documentation" : [ {
+      "href" : "https://vdp.visa.com/cybersource_error_codes#card_expired",
+      "method" : "GET"
+    } ]
+  }
+}
+2016-11-19 19:06:43 INFO  VisaAPIClient:198 - URI: https://sandbox.api.visa.com/cybersource/payments/v1/authorizations?apikey=X47Z5FC4UUIDVGLV0UNB21-tBiy8AHWBZUYpk4H0W0xD2APi0
+2016-11-19 19:06:43 INFO  VisaAPIClient:199 - Payment Authorization Test
+2016-11-19 19:06:44 INFO  VisaAPIClient:203 - RequestBody: {
+  "amount" : "0",
+  "currency" : "USD",
+  "payment" : {
+    "cardNumber" : "4111111111111111",
+    "cardExpirationMonth" : "10",
+    "cardExpirationYear" : "2016"
+  }
+}
+2016-11-19 19:06:56 INFO  VisaAPIClient:171 - Response status : HTTP/1.1 400 Bad Request
+
+2016-11-19 19:06:56 INFO  VisaAPIClient:173 - Response Headers: 
+
+2016-11-19 19:06:56 INFO  VisaAPIClient:176 - X-SERVED-BY:l73c003m
+2016-11-19 19:06:56 INFO  VisaAPIClient:176 - X-Backside-Transport:FAIL FAIL,FAIL FAIL
+2016-11-19 19:06:56 INFO  VisaAPIClient:176 - X-Client-IP:127.0.0.1,10.121.112.186
+2016-11-19 19:06:56 INFO  VisaAPIClient:176 - X-Global-Transaction-ID:124161697
+2016-11-19 19:06:56 INFO  VisaAPIClient:176 - X-Archived-Client-IP:127.0.0.1
+2016-11-19 19:06:56 INFO  VisaAPIClient:176 - X-APP-STATUS:400
+2016-11-19 19:06:56 INFO  VisaAPIClient:176 - X-CORRELATION-ID:vv4CMYAJlR_SC
+2016-11-19 19:06:56 INFO  VisaAPIClient:176 - X-Frame-Options:SAMEORIGIN
+2016-11-19 19:06:56 INFO  VisaAPIClient:176 - X-XSS-Protection:1; mode=block
+2016-11-19 19:06:56 INFO  VisaAPIClient:176 - X-Content-Type-Options:nosniff
+2016-11-19 19:06:56 INFO  VisaAPIClient:176 - Strict-Transport-Security:max-age=2592000;includeSubdomains
+2016-11-19 19:06:56 INFO  VisaAPIClient:176 - Cache-Control:no-cache, no-store, must-revalidate
+2016-11-19 19:06:56 INFO  VisaAPIClient:176 - Pragma:no-cache
+2016-11-19 19:06:56 INFO  VisaAPIClient:176 - Expires:Thu, 01 Jan 1970 00:00:00 GMT
+2016-11-19 19:06:56 INFO  VisaAPIClient:176 - Content-Security-Policy-Report-Only:default-src 'self' https://*.v.me https://*.visa.com;script-src 'self' 'unsafe-inline' 'unsafe-eval'  https://*.visa.com https://*.v.me;img-src 'self' https://*.v.me https://*.visa.com https://*.unica.com https://ad.doubleclick.net;style-src 'self' 'unsafe-inline' https://*.visa.com;object-src  https://*.v.me https://*.visa.com data:;report-uri /logging/logCSPReport;
+2016-11-19 19:06:56 INFO  VisaAPIClient:176 - X-Content-Security-Policy-Report-Only:default-src 'self' https://*.v.me https://*.visa.com;script-src 'self' 'unsafe-inline' 'unsafe-eval'  https://*.visa.com https://*.v.me;img-src 'self' https://*.v.me https://*.visa.com https://*.unica.com https://ad.doubleclick.net;style-src 'self' 'unsafe-inline' https://*.visa.com;object-src  https://*.v.me https://*.visa.com data:;report-uri /logging/logCSPReport;
+2016-11-19 19:06:56 INFO  VisaAPIClient:176 - X-WebKit-CSP-Report-Only:default-src 'self' https://*.v.me https://*.visa.com;script-src 'self' 'unsafe-inline' 'unsafe-eval'  https://*.visa.com https://*.v.me;img-src 'self' https://*.v.me https://*.visa.com https://*.unica.com https://ad.doubleclick.net;style-src 'self' 'unsafe-inline' https://*.visa.com;object-src  https://*.v.me https://*.visa.com data:;report-uri /logging/logCSPReport;
+2016-11-19 19:06:56 INFO  VisaAPIClient:176 - Content-Type:application/hal+json;charset=UTF-8
+2016-11-19 19:06:56 INFO  VisaAPIClient:176 - Content-Language:en-US
+2016-11-19 19:06:56 INFO  VisaAPIClient:176 - Content-Length:582
+2016-11-19 19:06:56 INFO  VisaAPIClient:176 - X-Cnection:close
+2016-11-19 19:06:56 INFO  VisaAPIClient:176 - Date:Sun, 20 Nov 2016 00:06:56 GMT
+2016-11-19 19:06:56 INFO  VisaAPIClient:176 - Connection:close
+2016-11-19 19:06:56 INFO  VisaAPIClient:177 - 
+ Response Body:
+2016-11-19 19:06:56 INFO  VisaAPIClient:184 - ResponseBody: {
+  "responseStatus" : {
+    "status" : 400,
+    "reason" : "card_expired",
+    "message" : "The card has expired.",
+    "correlationId" : "6ac2d1c0-98d9-40a7-a639-2fc45e1a9d37",
+    "details" : [ {
+      "location" : "reasonCode",
+      "message" : "202"
+    } ]
+  },
+  "_links" : {
+    "self" : {
+      "href" : "https://sandbox.api.visa.com/cybersource/payments/v1/errors/6ac2d1c0-98d9-40a7-a639-2fc45e1a9d37",
+      "method" : "GET"
+    },
+    "documentation" : [ {
+      "href" : "https://vdp.visa.com/cybersource_error_codes#card_expired",
+      "method" : "GET"
+    } ]
+  }
+}
+2016-11-19 19:12:51 INFO  VisaAPIClient:198 - URI: https://sandbox.api.visa.com/cybersource/payments/v1/authorizations?apikey=X47Z5FC4UUIDVGLV0UNB21-tBiy8AHWBZUYpk4H0W0xD2APi0
+2016-11-19 19:12:51 INFO  VisaAPIClient:199 - Payment Authorization Test
+2016-11-19 19:12:51 INFO  VisaAPIClient:203 - RequestBody: {
+  "amount" : "0",
+  "currency" : "USD",
+  "payment" : {
+    "cardNumber" : "4111111111111111",
+    "cardExpirationMonth" : "10",
+    "cardExpirationYear" : "2016"
+  }
+}
+2016-11-19 19:12:57 INFO  VisaAPIClient:171 - Response status : HTTP/1.1 400 Bad Request
+
+2016-11-19 19:12:57 INFO  VisaAPIClient:173 - Response Headers: 
+
+2016-11-19 19:12:57 INFO  VisaAPIClient:176 - X-SERVED-BY:l73c037m
+2016-11-19 19:12:57 INFO  VisaAPIClient:176 - X-Backside-Transport:FAIL FAIL,FAIL FAIL
+2016-11-19 19:12:57 INFO  VisaAPIClient:176 - X-Client-IP:127.0.0.1,10.121.113.125
+2016-11-19 19:12:57 INFO  VisaAPIClient:176 - X-Global-Transaction-ID:124190193
+2016-11-19 19:12:57 INFO  VisaAPIClient:176 - X-Archived-Client-IP:127.0.0.1
+2016-11-19 19:12:57 INFO  VisaAPIClient:176 - X-APP-STATUS:400
+2016-11-19 19:12:57 INFO  VisaAPIClient:176 - X-CORRELATION-ID:COYql1x9Aq_SC
+2016-11-19 19:12:57 INFO  VisaAPIClient:176 - X-Frame-Options:SAMEORIGIN
+2016-11-19 19:12:57 INFO  VisaAPIClient:176 - X-XSS-Protection:1; mode=block
+2016-11-19 19:12:57 INFO  VisaAPIClient:176 - X-Content-Type-Options:nosniff
+2016-11-19 19:12:57 INFO  VisaAPIClient:176 - Strict-Transport-Security:max-age=2592000;includeSubdomains
+2016-11-19 19:12:57 INFO  VisaAPIClient:176 - Cache-Control:no-cache, no-store, must-revalidate
+2016-11-19 19:12:57 INFO  VisaAPIClient:176 - Pragma:no-cache
+2016-11-19 19:12:57 INFO  VisaAPIClient:176 - Expires:Thu, 01 Jan 1970 00:00:00 GMT
+2016-11-19 19:12:57 INFO  VisaAPIClient:176 - Content-Security-Policy-Report-Only:default-src 'self' https://*.v.me https://*.visa.com;script-src 'self' 'unsafe-inline' 'unsafe-eval'  https://*.visa.com https://*.v.me;img-src 'self' https://*.v.me https://*.visa.com https://*.unica.com https://ad.doubleclick.net;style-src 'self' 'unsafe-inline' https://*.visa.com;object-src  https://*.v.me https://*.visa.com data:;report-uri /logging/logCSPReport;
+2016-11-19 19:12:57 INFO  VisaAPIClient:176 - X-Content-Security-Policy-Report-Only:default-src 'self' https://*.v.me https://*.visa.com;script-src 'self' 'unsafe-inline' 'unsafe-eval'  https://*.visa.com https://*.v.me;img-src 'self' https://*.v.me https://*.visa.com https://*.unica.com https://ad.doubleclick.net;style-src 'self' 'unsafe-inline' https://*.visa.com;object-src  https://*.v.me https://*.visa.com data:;report-uri /logging/logCSPReport;
+2016-11-19 19:12:57 INFO  VisaAPIClient:176 - X-WebKit-CSP-Report-Only:default-src 'self' https://*.v.me https://*.visa.com;script-src 'self' 'unsafe-inline' 'unsafe-eval'  https://*.visa.com https://*.v.me;img-src 'self' https://*.v.me https://*.visa.com https://*.unica.com https://ad.doubleclick.net;style-src 'self' 'unsafe-inline' https://*.visa.com;object-src  https://*.v.me https://*.visa.com data:;report-uri /logging/logCSPReport;
+2016-11-19 19:12:57 INFO  VisaAPIClient:176 - Content-Type:application/hal+json;charset=UTF-8
+2016-11-19 19:12:57 INFO  VisaAPIClient:176 - Content-Language:en-US
+2016-11-19 19:12:57 INFO  VisaAPIClient:176 - Content-Length:582
+2016-11-19 19:12:57 INFO  VisaAPIClient:176 - X-Cnection:close
+2016-11-19 19:12:57 INFO  VisaAPIClient:176 - Date:Sun, 20 Nov 2016 00:12:57 GMT
+2016-11-19 19:12:57 INFO  VisaAPIClient:176 - Connection:close
+2016-11-19 19:12:57 INFO  VisaAPIClient:177 - 
+ Response Body:
+2016-11-19 19:12:57 INFO  VisaAPIClient:184 - ResponseBody: {
+  "responseStatus" : {
+    "status" : 400,
+    "reason" : "card_expired",
+    "message" : "The card has expired.",
+    "correlationId" : "3421aae6-f69b-4356-b52f-6f3f3e4fa945",
+    "details" : [ {
+      "location" : "reasonCode",
+      "message" : "202"
+    } ]
+  },
+  "_links" : {
+    "self" : {
+      "href" : "https://sandbox.api.visa.com/cybersource/payments/v1/errors/3421aae6-f69b-4356-b52f-6f3f3e4fa945",
+      "method" : "GET"
+    },
+    "documentation" : [ {
+      "href" : "https://vdp.visa.com/cybersource_error_codes#card_expired",
+      "method" : "GET"
+    } ]
+  }
+}
+2016-11-19 19:15:23 INFO  VisaAPIClient:198 - URI: https://sandbox.api.visa.com/cybersource/payments/v1/authorizations?apikey=X47Z5FC4UUIDVGLV0UNB21-tBiy8AHWBZUYpk4H0W0xD2APi0
+2016-11-19 19:15:23 INFO  VisaAPIClient:199 - Payment Authorization Test
+2016-11-19 19:15:23 INFO  VisaAPIClient:203 - RequestBody: {
+  "amount" : "0",
+  "currency" : "USD",
+  "payment" : {
+    "cardNumber" : "4111111111111111",
+    "cardExpirationMonth" : "10",
+    "cardExpirationYear" : "2016"
+  }
+}
+2016-11-19 19:15:26 INFO  VisaAPIClient:171 - Response status : HTTP/1.1 400 Bad Request
+
+2016-11-19 19:15:26 INFO  VisaAPIClient:173 - Response Headers: 
+
+2016-11-19 19:15:26 INFO  VisaAPIClient:176 - X-SERVED-BY:l73c023m
+2016-11-19 19:15:26 INFO  VisaAPIClient:176 - X-Backside-Transport:FAIL FAIL,FAIL FAIL
+2016-11-19 19:15:26 INFO  VisaAPIClient:176 - X-Client-IP:127.0.0.1,10.121.113.114
+2016-11-19 19:15:26 INFO  VisaAPIClient:176 - X-Global-Transaction-ID:124196321
+2016-11-19 19:15:26 INFO  VisaAPIClient:176 - X-Archived-Client-IP:127.0.0.1
+2016-11-19 19:15:26 INFO  VisaAPIClient:176 - X-APP-STATUS:400
+2016-11-19 19:15:26 INFO  VisaAPIClient:176 - X-CORRELATION-ID:WnEXgY0imi_SC
+2016-11-19 19:15:26 INFO  VisaAPIClient:176 - X-Frame-Options:SAMEORIGIN
+2016-11-19 19:15:26 INFO  VisaAPIClient:176 - X-XSS-Protection:1; mode=block
+2016-11-19 19:15:26 INFO  VisaAPIClient:176 - X-Content-Type-Options:nosniff
+2016-11-19 19:15:26 INFO  VisaAPIClient:176 - Strict-Transport-Security:max-age=2592000;includeSubdomains
+2016-11-19 19:15:26 INFO  VisaAPIClient:176 - Cache-Control:no-cache, no-store, must-revalidate
+2016-11-19 19:15:26 INFO  VisaAPIClient:176 - Pragma:no-cache
+2016-11-19 19:15:26 INFO  VisaAPIClient:176 - Expires:Thu, 01 Jan 1970 00:00:00 GMT
+2016-11-19 19:15:26 INFO  VisaAPIClient:176 - Content-Security-Policy-Report-Only:default-src 'self' https://*.v.me https://*.visa.com;script-src 'self' 'unsafe-inline' 'unsafe-eval'  https://*.visa.com https://*.v.me;img-src 'self' https://*.v.me https://*.visa.com https://*.unica.com https://ad.doubleclick.net;style-src 'self' 'unsafe-inline' https://*.visa.com;object-src  https://*.v.me https://*.visa.com data:;report-uri /logging/logCSPReport;
+2016-11-19 19:15:26 INFO  VisaAPIClient:176 - X-Content-Security-Policy-Report-Only:default-src 'self' https://*.v.me https://*.visa.com;script-src 'self' 'unsafe-inline' 'unsafe-eval'  https://*.visa.com https://*.v.me;img-src 'self' https://*.v.me https://*.visa.com https://*.unica.com https://ad.doubleclick.net;style-src 'self' 'unsafe-inline' https://*.visa.com;object-src  https://*.v.me https://*.visa.com data:;report-uri /logging/logCSPReport;
+2016-11-19 19:15:26 INFO  VisaAPIClient:176 - X-WebKit-CSP-Report-Only:default-src 'self' https://*.v.me https://*.visa.com;script-src 'self' 'unsafe-inline' 'unsafe-eval'  https://*.visa.com https://*.v.me;img-src 'self' https://*.v.me https://*.visa.com https://*.unica.com https://ad.doubleclick.net;style-src 'self' 'unsafe-inline' https://*.visa.com;object-src  https://*.v.me https://*.visa.com data:;report-uri /logging/logCSPReport;
+2016-11-19 19:15:26 INFO  VisaAPIClient:176 - Content-Type:application/hal+json;charset=UTF-8
+2016-11-19 19:15:26 INFO  VisaAPIClient:176 - Content-Language:en-US
+2016-11-19 19:15:26 INFO  VisaAPIClient:176 - Content-Length:582
+2016-11-19 19:15:26 INFO  VisaAPIClient:176 - X-Cnection:close
+2016-11-19 19:15:26 INFO  VisaAPIClient:176 - Date:Sun, 20 Nov 2016 00:15:25 GMT
+2016-11-19 19:15:26 INFO  VisaAPIClient:176 - Connection:close
+2016-11-19 19:15:26 INFO  VisaAPIClient:177 - 
+ Response Body:
+2016-11-19 19:15:26 INFO  VisaAPIClient:184 - ResponseBody: {
+  "responseStatus" : {
+    "status" : 400,
+    "reason" : "card_expired",
+    "message" : "The card has expired.",
+    "correlationId" : "f42247af-4d9f-46ab-bcab-2dc8b446c443",
+    "details" : [ {
+      "location" : "reasonCode",
+      "message" : "202"
+    } ]
+  },
+  "_links" : {
+    "self" : {
+      "href" : "https://sandbox.api.visa.com/cybersource/payments/v1/errors/f42247af-4d9f-46ab-bcab-2dc8b446c443",
+      "method" : "GET"
+    },
+    "documentation" : [ {
+      "href" : "https://vdp.visa.com/cybersource_error_codes#card_expired",
+      "method" : "GET"
+    } ]
+  }
+}
+2016-11-19 19:51:37 INFO  VisaAPIClient:198 - URI: https://sandbox.api.visa.com/cybersource/payments/v1/authorizations?apikey=X47Z5FC4UUIDVGLV0UNB21-tBiy8AHWBZUYpk4H0W0xD2APi0
+2016-11-19 19:51:37 INFO  VisaAPIClient:199 - Payment Authorization Test
+2016-11-19 19:51:37 INFO  VisaAPIClient:203 - RequestBody: {
+  "amount" : "0",
+  "currency" : "USD",
+  "payment" : {
+    "cardNumber" : "4111111111111111",
+    "cardExpirationMonth" : "12",
+    "cardExpirationYear" : "2016"
+  }
+}
+2016-11-19 19:51:45 INFO  VisaAPIClient:171 - Response status : HTTP/1.1 201 Created
+
+2016-11-19 19:51:45 INFO  VisaAPIClient:173 - Response Headers: 
+
+2016-11-19 19:51:45 INFO  VisaAPIClient:176 - X-SERVED-BY:l73c023m
+2016-11-19 19:51:45 INFO  VisaAPIClient:176 - X-Backside-Transport:OK OK,OK OK
+2016-11-19 19:51:45 INFO  VisaAPIClient:176 - X-Client-IP:127.0.0.1,10.121.113.114
+2016-11-19 19:51:45 INFO  VisaAPIClient:176 - X-Global-Transaction-ID:124289841
+2016-11-19 19:51:45 INFO  VisaAPIClient:176 - X-Archived-Client-IP:127.0.0.1
+2016-11-19 19:51:45 INFO  VisaAPIClient:176 - X-APP-STATUS:201
+2016-11-19 19:51:45 INFO  VisaAPIClient:176 - X-CORRELATION-ID:SjsOx4HuFa_SC
+2016-11-19 19:51:45 INFO  VisaAPIClient:176 - X-Frame-Options:SAMEORIGIN
+2016-11-19 19:51:45 INFO  VisaAPIClient:176 - X-XSS-Protection:1; mode=block
+2016-11-19 19:51:45 INFO  VisaAPIClient:176 - X-Content-Type-Options:nosniff
+2016-11-19 19:51:45 INFO  VisaAPIClient:176 - Strict-Transport-Security:max-age=2592000;includeSubdomains
+2016-11-19 19:51:45 INFO  VisaAPIClient:176 - Cache-Control:no-cache, no-store, must-revalidate
+2016-11-19 19:51:45 INFO  VisaAPIClient:176 - Pragma:no-cache
+2016-11-19 19:51:45 INFO  VisaAPIClient:176 - Expires:Thu, 01 Jan 1970 00:00:00 GMT
+2016-11-19 19:51:45 INFO  VisaAPIClient:176 - Content-Security-Policy-Report-Only:default-src 'self' https://*.v.me https://*.visa.com;script-src 'self' 'unsafe-inline' 'unsafe-eval'  https://*.visa.com https://*.v.me;img-src 'self' https://*.v.me https://*.visa.com https://*.unica.com https://ad.doubleclick.net;style-src 'self' 'unsafe-inline' https://*.visa.com;object-src  https://*.v.me https://*.visa.com data:;report-uri /logging/logCSPReport;
+2016-11-19 19:51:45 INFO  VisaAPIClient:176 - X-Content-Security-Policy-Report-Only:default-src 'self' https://*.v.me https://*.visa.com;script-src 'self' 'unsafe-inline' 'unsafe-eval'  https://*.visa.com https://*.v.me;img-src 'self' https://*.v.me https://*.visa.com https://*.unica.com https://ad.doubleclick.net;style-src 'self' 'unsafe-inline' https://*.visa.com;object-src  https://*.v.me https://*.visa.com data:;report-uri /logging/logCSPReport;
+2016-11-19 19:51:45 INFO  VisaAPIClient:176 - X-WebKit-CSP-Report-Only:default-src 'self' https://*.v.me https://*.visa.com;script-src 'self' 'unsafe-inline' 'unsafe-eval'  https://*.visa.com https://*.v.me;img-src 'self' https://*.v.me https://*.visa.com https://*.unica.com https://ad.doubleclick.net;style-src 'self' 'unsafe-inline' https://*.visa.com;object-src  https://*.v.me https://*.visa.com data:;report-uri /logging/logCSPReport;
+2016-11-19 19:51:45 INFO  VisaAPIClient:176 - Content-Type:application/hal+json;charset=UTF-8
+2016-11-19 19:51:45 INFO  VisaAPIClient:176 - Content-Language:en-US
+2016-11-19 19:51:45 INFO  VisaAPIClient:176 - Content-Length:814
+2016-11-19 19:51:45 INFO  VisaAPIClient:176 - Date:Sun, 20 Nov 2016 00:51:45 GMT
+2016-11-19 19:51:45 INFO  VisaAPIClient:176 - Connection:keep-alive
+2016-11-19 19:51:45 INFO  VisaAPIClient:177 - 
+ Response Body:
+2016-11-19 19:51:45 INFO  VisaAPIClient:184 - ResponseBody: {
+  "id" : "4796031047946870204104",
+  "status" : "PendingCapture",
+  "amount" : 0.0,
+  "currency" : "USD",
+  "authCode" : "888888",
+  "referenceId" : "1479603104785",
+  "payment" : {
+    "cardNumber" : "xxxxxxxxxxxx1111",
+    "cardExpirationMonth" : "12",
+    "cardExpirationYear" : "2016"
+  },
+  "_links" : {
+    "self" : {
+      "href" : "https://sandbox.api.visa.com/cybersource/payments/v1/authorizations/4796031047946870204104",
+      "method" : "GET"
+    },
+    "capture" : [ {
+      "href" : "https://sandbox.api.visa.com/cybersource/payments/v1/authorizations/4796031047946870204104/captures",
+      "method" : "POST"
+    } ],
+    "reversal" : [ {
+      "href" : "https://sandbox.api.visa.com/cybersource/payments/v1/authorizations/4796031047946870204104/reversals",
+      "method" : "POST"
+    } ]
+  }
+}
+2016-11-19 23:48:25 INFO  VisaAPIClient:198 - URI: https://sandbox.api.visa.com/cybersource/payments/v1/authorizations?apikey=X47Z5FC4UUIDVGLV0UNB21-tBiy8AHWBZUYpk4H0W0xD2APi0
+2016-11-19 23:48:25 INFO  VisaAPIClient:199 - Payment Authorization Test
+2016-11-19 23:48:25 INFO  VisaAPIClient:203 - RequestBody: {
+  "amount" : "0",
+  "currency" : "USD",
+  "payment" : {
+    "cardNumber" : "4111111111111111",
+    "cardExpirationMonth" : "12",
+    "cardExpirationYear" : "2016"
+  }
+}
+2016-11-19 23:48:32 INFO  VisaAPIClient:171 - Response status : HTTP/1.1 201 Created
+
+2016-11-19 23:48:32 INFO  VisaAPIClient:173 - Response Headers: 
+
+2016-11-19 23:48:32 INFO  VisaAPIClient:176 - X-SERVED-BY:l73c002m
+2016-11-19 23:48:32 INFO  VisaAPIClient:176 - X-Backside-Transport:OK OK,OK OK
+2016-11-19 23:48:32 INFO  VisaAPIClient:176 - X-Client-IP:127.0.0.1,10.121.112.185
+2016-11-19 23:48:32 INFO  VisaAPIClient:176 - X-Global-Transaction-ID:108932017
+2016-11-19 23:48:32 INFO  VisaAPIClient:176 - X-Archived-Client-IP:127.0.0.1
+2016-11-19 23:48:32 INFO  VisaAPIClient:176 - X-APP-STATUS:201
+2016-11-19 23:48:32 INFO  VisaAPIClient:176 - X-CORRELATION-ID:eDu9YpfTRD_SC
+2016-11-19 23:48:32 INFO  VisaAPIClient:176 - X-Frame-Options:SAMEORIGIN
+2016-11-19 23:48:32 INFO  VisaAPIClient:176 - X-XSS-Protection:1; mode=block
+2016-11-19 23:48:32 INFO  VisaAPIClient:176 - X-Content-Type-Options:nosniff
+2016-11-19 23:48:32 INFO  VisaAPIClient:176 - Strict-Transport-Security:max-age=2592000;includeSubdomains
+2016-11-19 23:48:32 INFO  VisaAPIClient:176 - Cache-Control:no-cache, no-store, must-revalidate
+2016-11-19 23:48:32 INFO  VisaAPIClient:176 - Pragma:no-cache
+2016-11-19 23:48:32 INFO  VisaAPIClient:176 - Expires:Thu, 01 Jan 1970 00:00:00 GMT
+2016-11-19 23:48:32 INFO  VisaAPIClient:176 - Content-Security-Policy-Report-Only:default-src 'self' https://*.v.me https://*.visa.com;script-src 'self' 'unsafe-inline' 'unsafe-eval'  https://*.visa.com https://*.v.me;img-src 'self' https://*.v.me https://*.visa.com https://*.unica.com https://ad.doubleclick.net;style-src 'self' 'unsafe-inline' https://*.visa.com;object-src  https://*.v.me https://*.visa.com data:;report-uri /logging/logCSPReport;
+2016-11-19 23:48:32 INFO  VisaAPIClient:176 - X-Content-Security-Policy-Report-Only:default-src 'self' https://*.v.me https://*.visa.com;script-src 'self' 'unsafe-inline' 'unsafe-eval'  https://*.visa.com https://*.v.me;img-src 'self' https://*.v.me https://*.visa.com https://*.unica.com https://ad.doubleclick.net;style-src 'self' 'unsafe-inline' https://*.visa.com;object-src  https://*.v.me https://*.visa.com data:;report-uri /logging/logCSPReport;
+2016-11-19 23:48:32 INFO  VisaAPIClient:176 - X-WebKit-CSP-Report-Only:default-src 'self' https://*.v.me https://*.visa.com;script-src 'self' 'unsafe-inline' 'unsafe-eval'  https://*.visa.com https://*.v.me;img-src 'self' https://*.v.me https://*.visa.com https://*.unica.com https://ad.doubleclick.net;style-src 'self' 'unsafe-inline' https://*.visa.com;object-src  https://*.v.me https://*.visa.com data:;report-uri /logging/logCSPReport;
+2016-11-19 23:48:32 INFO  VisaAPIClient:176 - Content-Type:application/hal+json;charset=UTF-8
+2016-11-19 23:48:32 INFO  VisaAPIClient:176 - Content-Language:en-US
+2016-11-19 23:48:32 INFO  VisaAPIClient:176 - Content-Length:814
+2016-11-19 23:48:32 INFO  VisaAPIClient:176 - Date:Sun, 20 Nov 2016 04:48:32 GMT
+2016-11-19 23:48:32 INFO  VisaAPIClient:176 - Connection:keep-alive
+2016-11-19 23:48:32 INFO  VisaAPIClient:177 - 
+ Response Body:
+2016-11-19 23:48:32 INFO  VisaAPIClient:184 - ResponseBody: {
+  "id" : "4796173122656901704101",
+  "status" : "PendingCapture",
+  "amount" : 0.0,
+  "currency" : "USD",
+  "authCode" : "888888",
+  "referenceId" : "1479617312234",
+  "payment" : {
+    "cardNumber" : "xxxxxxxxxxxx1111",
+    "cardExpirationMonth" : "12",
+    "cardExpirationYear" : "2016"
+  },
+  "_links" : {
+    "self" : {
+      "href" : "https://sandbox.api.visa.com/cybersource/payments/v1/authorizations/4796173122656901704101",
+      "method" : "GET"
+    },
+    "capture" : [ {
+      "href" : "https://sandbox.api.visa.com/cybersource/payments/v1/authorizations/4796173122656901704101/captures",
+      "method" : "POST"
+    } ],
+    "reversal" : [ {
+      "href" : "https://sandbox.api.visa.com/cybersource/payments/v1/authorizations/4796173122656901704101/reversals",
+      "method" : "POST"
+    } ]
+  }
+}
+2016-11-22 13:50:55 INFO  VisaAPIClient:198 - URI: https://sandbox.api.visa.com/cybersource/payments/v1/authorizations?apikey=X47Z5FC4UUIDVGLV0UNB21-tBiy8AHWBZUYpk4H0W0xD2APi0
+2016-11-22 13:50:55 INFO  VisaAPIClient:199 - Payment Authorization Test
+2016-11-22 13:50:55 INFO  VisaAPIClient:203 - RequestBody: {
+  "amount" : "0",
+  "currency" : "USD",
+  "payment" : {
+    "cardNumber" : "4111111111111111",
+    "cardExpirationMonth" : "12",
+    "cardExpirationYear" : "2016"
+  }
+}
+2016-11-22 13:50:58 INFO  VisaAPIClient:171 - Response status : HTTP/1.1 201 Created
+
+2016-11-22 13:50:58 INFO  VisaAPIClient:173 - Response Headers: 
+
+2016-11-22 13:50:58 INFO  VisaAPIClient:176 - X-SERVED-BY:l73c037m
+2016-11-22 13:50:58 INFO  VisaAPIClient:176 - X-Backside-Transport:OK OK,OK OK
+2016-11-22 13:50:58 INFO  VisaAPIClient:176 - X-Client-IP:127.0.0.1,10.121.113.125
+2016-11-22 13:50:58 INFO  VisaAPIClient:176 - X-Global-Transaction-ID:116012605
+2016-11-22 13:50:58 INFO  VisaAPIClient:176 - X-Archived-Client-IP:127.0.0.1
+2016-11-22 13:50:58 INFO  VisaAPIClient:176 - X-APP-STATUS:201
+2016-11-22 13:50:58 INFO  VisaAPIClient:176 - X-CORRELATION-ID:mKvaqP5wPx_SC
+2016-11-22 13:50:58 INFO  VisaAPIClient:176 - X-Frame-Options:SAMEORIGIN
+2016-11-22 13:50:58 INFO  VisaAPIClient:176 - X-XSS-Protection:1; mode=block
+2016-11-22 13:50:58 INFO  VisaAPIClient:176 - X-Content-Type-Options:nosniff
+2016-11-22 13:50:58 INFO  VisaAPIClient:176 - Strict-Transport-Security:max-age=2592000;includeSubdomains
+2016-11-22 13:50:58 INFO  VisaAPIClient:176 - Cache-Control:no-cache, no-store, must-revalidate
+2016-11-22 13:50:58 INFO  VisaAPIClient:176 - Pragma:no-cache
+2016-11-22 13:50:58 INFO  VisaAPIClient:176 - Expires:Thu, 01 Jan 1970 00:00:00 GMT
+2016-11-22 13:50:58 INFO  VisaAPIClient:176 - Content-Security-Policy-Report-Only:default-src 'self' https://*.v.me https://*.visa.com;script-src 'self' 'unsafe-inline' 'unsafe-eval'  https://*.visa.com https://*.v.me;img-src 'self' https://*.v.me https://*.visa.com https://*.unica.com https://ad.doubleclick.net;style-src 'self' 'unsafe-inline' https://*.visa.com;object-src  https://*.v.me https://*.visa.com data:;report-uri /logging/logCSPReport;
+2016-11-22 13:50:58 INFO  VisaAPIClient:176 - X-Content-Security-Policy-Report-Only:default-src 'self' https://*.v.me https://*.visa.com;script-src 'self' 'unsafe-inline' 'unsafe-eval'  https://*.visa.com https://*.v.me;img-src 'self' https://*.v.me https://*.visa.com https://*.unica.com https://ad.doubleclick.net;style-src 'self' 'unsafe-inline' https://*.visa.com;object-src  https://*.v.me https://*.visa.com data:;report-uri /logging/logCSPReport;
+2016-11-22 13:50:58 INFO  VisaAPIClient:176 - X-WebKit-CSP-Report-Only:default-src 'self' https://*.v.me https://*.visa.com;script-src 'self' 'unsafe-inline' 'unsafe-eval'  https://*.visa.com https://*.v.me;img-src 'self' https://*.v.me https://*.visa.com https://*.unica.com https://ad.doubleclick.net;style-src 'self' 'unsafe-inline' https://*.visa.com;object-src  https://*.v.me https://*.visa.com data:;report-uri /logging/logCSPReport;
+2016-11-22 13:50:58 INFO  VisaAPIClient:176 - Content-Type:application/hal+json;charset=UTF-8
+2016-11-22 13:50:58 INFO  VisaAPIClient:176 - Content-Language:en-US
+2016-11-22 13:50:58 INFO  VisaAPIClient:176 - Content-Length:814
+2016-11-22 13:50:58 INFO  VisaAPIClient:176 - Date:Tue, 22 Nov 2016 18:50:58 GMT
+2016-11-22 13:50:58 INFO  VisaAPIClient:176 - Connection:keep-alive
+2016-11-22 13:50:58 INFO  VisaAPIClient:177 - 
+ Response Body:
+2016-11-22 13:50:58 INFO  VisaAPIClient:184 - ResponseBody: {
+  "id" : "4798406582666773904107",
+  "status" : "PendingCapture",
+  "amount" : 0.0,
+  "currency" : "USD",
+  "authCode" : "888888",
+  "referenceId" : "1479840658254",
+  "payment" : {
+    "cardNumber" : "xxxxxxxxxxxx1111",
+    "cardExpirationMonth" : "12",
+    "cardExpirationYear" : "2016"
+  },
+  "_links" : {
+    "self" : {
+      "href" : "https://sandbox.api.visa.com/cybersource/payments/v1/authorizations/4798406582666773904107",
+      "method" : "GET"
+    },
+    "capture" : [ {
+      "href" : "https://sandbox.api.visa.com/cybersource/payments/v1/authorizations/4798406582666773904107/captures",
+      "method" : "POST"
+    } ],
+    "reversal" : [ {
+      "href" : "https://sandbox.api.visa.com/cybersource/payments/v1/authorizations/4798406582666773904107/reversals",
+      "method" : "POST"
+    } ]
+  }
+}
